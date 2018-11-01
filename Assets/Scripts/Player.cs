@@ -47,15 +47,6 @@ public class Player : MonoBehaviour
             animator.SetTrigger("Hit");
         }
 
-        animator.SetBool("Running", movementInput != Vector2.zero);
+        animator.SetBool("Running", running);
     }
-
-    //private void OnControllerColliderHit(ControllerColliderHit hit)
-    //{
-    //    Rigidbody body = hit.collider.attachedRigidbody;
-    //    if (body != null && !body.isKinematic && body.gameObject.tag == "Physics")
-    //    {
-    //        body.velocity += new Vector3(hit.controller.velocity.x, 0f, hit.controller.velocity.z);
-    //    }
-    //}
 }
